@@ -1,0 +1,21 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 200;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  backdrop-filter: blur(0px);
+  max-width: 600px;
+  margin: 45px auto;
+  padding: 30px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 100px;
+  text-align: center;
+}
