@@ -48,6 +48,7 @@ h1 {
 h2 {
   font-size: 2.5rem;
   font-weight: 500;
+  margin: 0;
 }
 
 .search-form {
@@ -55,6 +56,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .search-form-input {
@@ -88,6 +90,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .weather-details {
@@ -99,7 +102,6 @@ h2 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 10px;
-  color: #004d40;
 }
 
 .weather-details p {
@@ -132,13 +134,13 @@ h2 {
   font-size: 31px;
   font-weight: bold;
   font-style: italic;
-  border: none;
 }
 
 .weather-icon-temp {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .weather-icon {
@@ -164,6 +166,53 @@ h2 {
   color: #004d40;
   line-height: 1;
   margin-bottom: 47px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-between; /* Changed to space-between to align items more evenly */
+  align-items: flex-start; /* Changed to align items to the top */
+  border-top: 1px solid #80deea;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+.weather-forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #004d40;
+  flex: 1;
+  margin: 0 10px; /* Added margin to separate items */
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: 500;
+  color: #004d40;
+  margin-bottom: 5px;
+}
+
+.weather-forecast-icon {
+  font-size: 2rem;
+  color: #004d40;
+  margin-bottom: 5px;
+}
+
+.weather-forecast-temperatures {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.weather-forecast-temperature {
+  font-size: 1.2rem;
+  color: #004d40;
+  margin: 0 5px;
+}
+
+.weather-forecast-temperature strong {
+  color: #f7851a;
 }
 
 footer {
