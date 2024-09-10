@@ -37,16 +37,22 @@ header {
   background: radial-gradient(circle, #b2dfdb, #ffffff);
 }
 
+header:hover {
+  background: radial-gradient(circle, #ffffff, #b2dfdb);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
 h1 {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 40px;
   margin-bottom: 15px;
   color: #004d40;
   letter-spacing: 1px;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 500;
   margin: 0;
 }
@@ -99,13 +105,13 @@ h2 {
 }
 
 .weather-details h2 {
-  font-size: 1.8rem;
+  font-size: 29px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .weather-details p {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .weather-app-city {
@@ -131,9 +137,8 @@ h2 {
 
 .weather-app-details strong:hover {
   color: #004d40;
-  font-size: 31px;
+  font-size: 32px;
   font-weight: bold;
-  font-style: italic;
 }
 
 .weather-icon-temp {
@@ -162,7 +167,7 @@ h2 {
 }
 
 .unit {
-  font-size: 29px;
+  font-size: 28px;
   color: #004d40;
   line-height: 1;
   margin-bottom: 47px;
@@ -170,8 +175,8 @@ h2 {
 
 .weather-forecast {
   display: flex;
-  justify-content: space-between; /* Changed to space-between to align items more evenly */
-  align-items: flex-start; /* Changed to align items to the top */
+  justify-content: space-between;
+  align-items: flex-start;
   border-top: 1px solid #80deea;
   margin-top: 30px;
   padding-top: 10px;
@@ -183,7 +188,7 @@ h2 {
   align-items: center;
   color: #004d40;
   flex: 1;
-  margin: 0 10px; /* Added margin to separate items */
+  margin: 0 10px;
 }
 
 .weather-forecast-date {
@@ -194,7 +199,7 @@ h2 {
 }
 
 .weather-forecast-icon {
-  font-size: 2rem;
+  font-size: 32px;
   color: #004d40;
   margin-bottom: 5px;
 }
@@ -206,7 +211,7 @@ h2 {
 }
 
 .weather-forecast-temperature {
-  font-size: 1.2rem;
+  font-size: 20;
   color: #004d40;
   margin: 0 5px;
 }
