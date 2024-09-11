@@ -35,6 +35,7 @@ header {
   margin-bottom: 20px;
   padding-bottom: 20px;
   background: radial-gradient(circle, #b2dfdb, #ffffff);
+  font-family: "Playfair Display SC", serif;
 }
 
 header:hover {
@@ -44,17 +45,19 @@ header:hover {
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 40px;
   margin-bottom: 15px;
   color: #004d40;
   letter-spacing: 1px;
+  font-family: "Playfair Display SC", serif;
 }
 
 h2 {
   font-size: 40px;
   font-weight: 500;
   margin: 0;
+  font-family: "Playfair Display SC", serif;
 }
 
 .search-form {
@@ -106,29 +109,33 @@ h2 {
 
 .weather-details h2 {
   font-size: 29px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 10px;
+  font-family: "Playfair Display SC", serif;
 }
 
 .weather-details p {
   font-size: 16px;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 300;
 }
 
 .weather-app-city {
   margin: 0;
   font-size: 36px;
   line-height: 44px;
+  font-weight: 600;
 }
 
 .weather-app-details {
   font-size: 25px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .weather-app-details strong {
   color: #f7851a;
-  font-weight: bold;
+  font-weight: 600;
   padding: 4px 8px;
   margin: 0 2px;
   display: inline-block;
@@ -196,6 +203,7 @@ h2 {
   font-weight: 500;
   color: #004d40;
   margin-bottom: 5px;
+  font-family: "Playfair Display SC", serif;
 }
 
 .weather-forecast-icon {
@@ -208,10 +216,11 @@ h2 {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .weather-forecast-temperature {
-  font-size: 20;
+  font-size: 20px;
   color: #004d40;
   margin: 0 5px;
 }
@@ -227,6 +236,7 @@ footer {
   border-top: 1px solid #e0f7fa;
   padding: 20px 0;
   color: #004d40;
+  font-family: "Roboto", sans-serif;
 }
 
 footer p a {
@@ -235,9 +245,10 @@ footer p a {
 }
 
 footer p a:hover {
-  text-decoration: wavy;
   color: orange;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
 }
