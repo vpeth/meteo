@@ -30,20 +30,14 @@
     <div class="weather-app">
       <header>
         <h1>Forecast in a flash! ⚡</h1>
-        <form class="search-form" aria-label="Search for weather information">
+        <form class="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
-            aria-label="City search"
           />
-          <input
-            type="submit"
-            value="Search"
-            class="search-form-button"
-            aria-label="Submit search"
-          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
@@ -57,19 +51,17 @@
             </p>
           </div>
           <div class="weather-icon-temp">
-            <div class="weather-icon" aria-label="Weather icon">🌞</div>
+            <div class="weather-icon">🌞</div>
             <div class="temp-container">
               <div class="temperature">12</div>
               <div class="unit">°C</div>
             </div>
           </div>
         </div>
-        <div class="weather-forecast">
+        <div id="forecast" class="weather-forecast">
           <div class="weather-forecast-item">
             <div class="weather-forecast-date">Tue</div>
-            <div class="weather-forecast-icon" aria-label="Weather icon">
-              🌧️
-            </div>
+            <div class="weather-forecast-icon">🌧️</div>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
                 <strong>27°</strong>
@@ -79,9 +71,7 @@
           </div>
           <div class="weather-forecast-item">
             <div class="weather-forecast-date">Wed</div>
-            <div class="weather-forecast-icon" aria-label="Weather icon">
-              ☀️
-            </div>
+            <div class="weather-forecast-icon">☀️</div>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
                 <strong>29°</strong>
@@ -91,9 +81,7 @@
           </div>
           <div class="weather-forecast-item">
             <div class="weather-forecast-date">Thu</div>
-            <div class="weather-forecast-icon" aria-label="Weather icon">
-              ⛈️
-            </div>
+            <div class="weather-forecast-icon">⛈️</div>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
                 <strong>25°</strong>
@@ -103,9 +91,7 @@
           </div>
           <div class="weather-forecast-item">
             <div class="weather-forecast-date">Fri</div>
-            <div class="weather-forecast-icon" aria-label="Weather icon">
-              🌤️
-            </div>
+            <div class="weather-forecast-icon">🌤️</div>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
                 <strong>28°</strong>
@@ -115,9 +101,7 @@
           </div>
           <div class="weather-forecast-item">
             <div class="weather-forecast-date">Sat</div>
-            <div class="weather-forecast-icon" aria-label="Weather icon">
-              🌥️
-            </div>
+            <div class="weather-forecast-icon">🌥️</div>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
                 <strong>26°</strong>
@@ -127,9 +111,7 @@
           </div>
           <div class="weather-forecast-item">
             <div class="weather-forecast-date">Sun</div>
-            <div class="weather-forecast-icon" aria-label="Weather icon">
-              🌈
-            </div>
+            <div class="weather-forecast-icon">🌈</div>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
                 <strong>24°</strong>
