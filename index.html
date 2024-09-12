@@ -24,127 +24,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Meteo - Weather Forecast Application</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
         <h1>Forecast in a flash! ⚡</h1>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div class="weather-info">
-          <div class="weather-details">
-            <h2 class="weather-app-city">Paris</h2>
+        <div class="weather-app-data">
+          <div class="weather-app-details">
+            <h2 class="weather-app-city" id="city"></h2>
             <p class="weather-app-details">
-              Tuesday 14:49, scattered clouds
+              <span id="time"></span>
+              <span id="description"></span>
               <br />
-              Humidity: <strong>66%</strong> Wind: <strong>3.13 km/h</strong>
+              Humidity: <strong id="humidity"></strong> Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
-          <div class="weather-icon-temp">
-            <div class="weather-icon">🌞</div>
-            <div class="temp-container">
-              <div class="temperature">12</div>
-              <div class="unit">°C</div>
-            </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-tempeperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
-        <div id="forecast" class="weather-forecast">
-          <div class="weather-forecast-item">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="weather-forecast-icon">🌧️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>27°</strong>
-              </div>
-              <div class="weather-forecast-temperature">18°</div>
-            </div>
-          </div>
-          <div class="weather-forecast-item">
-            <div class="weather-forecast-date">Wed</div>
-            <div class="weather-forecast-icon">☀️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>29°</strong>
-              </div>
-              <div class="weather-forecast-temperature">20°</div>
-            </div>
-          </div>
-          <div class="weather-forecast-item">
-            <div class="weather-forecast-date">Thu</div>
-            <div class="weather-forecast-icon">⛈️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>25°</strong>
-              </div>
-              <div class="weather-forecast-temperature">18°</div>
-            </div>
-          </div>
-          <div class="weather-forecast-item">
-            <div class="weather-forecast-date">Fri</div>
-            <div class="weather-forecast-icon">🌤️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>28°</strong>
-              </div>
-              <div class="weather-forecast-temperature">19°</div>
-            </div>
-          </div>
-          <div class="weather-forecast-item">
-            <div class="weather-forecast-date">Sat</div>
-            <div class="weather-forecast-icon">🌥️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>26°</strong>
-              </div>
-              <div class="weather-forecast-temperature">17°</div>
-            </div>
-          </div>
-          <div class="weather-forecast-item">
-            <div class="weather-forecast-date">Sun</div>
-            <div class="weather-forecast-icon">🌈</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>24°</strong>
-              </div>
-              <div class="weather-forecast-temperature">16°</div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
+
       <footer>
-        <p>
-          This project was coded by
-          <a
-            href="https://github.com/vpeth"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Valeria Solano</a
-          >, is
-          <a
-            href="https://github.com/vpeth/meteo"
-            target="_blank"
-            rel="noopener noreferrer"
-            >open-sourced on GitHub</a
-          >
-          and hosted
-          <a
-            href="https://shecodesmeteo.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >on Netlify</a
-          >.
-        </p>
+        This project was coded by
+        <a
+          href="https://github.com/vpeth"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-regular fa-code"></i> Valeria Solano </a
+        >, is
+        <a
+          href="https://github.com/vpeth/meteo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          open-sourced on GitHub
+        </a>
+        and hosted
+        <a
+          href="https://shecodesmeteo.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          on Netlify </a
+        >.
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
