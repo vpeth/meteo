@@ -294,41 +294,42 @@ footer p a:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .search-form-input,
   .search-form-button {
-    width: 100%;
-    font-size: 14px;
-    padding: 8px;
+    width: 100%; /* Changed to full width for mobile */
+    font-size: 14px; /* Reduced font size */
+    padding: 8px; /* Reduced padding */
   }
 
   .weather-forecast {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: nowrap; /* Ensures horizontal scrolling on small screens */
+    overflow-x: auto; /* Allows horizontal scrolling */
     border-top: 1px solid #80deea;
     margin-top: 50px;
     padding-top: 10px;
   }
 
   .weather-forecast-item {
-    flex: 1 0 auto;
-    min-width: 100px;
-    margin-right: 10px;
+    flex: 1 0 auto; /* Allows items to grow and shrink as needed */
+    min-width: 100px; /* Ensures a minimum width for each item */
+    margin-right: 10px; /* Adds spacing between items */
   }
 
   .weather-forecast-icon {
-    width: 88px;
-    height: 88px;
+    width: 88px; /* Increased size for better visibility */
+    height: 88px; /* Increased size for better visibility */
     display: block;
     margin: 0 auto;
   }
 
   .weather-forecast-date {
-    font-size: 14px;
+    font-size: 14px; /* Adjusted font size */
   }
 
   .weather-forecast-temperature {
-    font-size: 18px;
+    font-size: 18px; /* Adjusted font size */
   }
 }
